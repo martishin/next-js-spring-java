@@ -1,0 +1,14 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/next-js-spring-java
+        username: postgres
+        password: password
+    # security:
+    #   user:
+    #     name: foo
+    #     password: bar
+
+fullstackbook:
+    app:
+        jwtSecret: mysecret
+        jwtExpirationMs: 86400000
