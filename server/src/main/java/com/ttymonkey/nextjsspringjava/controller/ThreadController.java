@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/thread")
 public class ThreadController {
     @GetMapping("/name")
-    public String getThreadName() {
+    public String getThreadName() throws InterruptedException {
+        Thread.sleep(1000);
         return Thread.currentThread().toString();
     }
 }
